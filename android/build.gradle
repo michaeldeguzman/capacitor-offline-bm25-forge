@@ -1,0 +1,85 @@
+ext {
+    junitVersion = project.hasProperty('junitVersion') ? rootProject.ext.junitVersion : '4.13.2'
+    androidxAppCompatVersion = project.hasProperty('androidxAppCompatVersion') ? rootProject.ext.androidxAppCompatVersion : '1.6.1'
+    androidxJunitVersion = project.hasProperty('androidxJunitVersion') ? rootProject.ext.androidxJunitVersion : '1.1.5'
+    androidxEspressoCoreVersion = project.hasProperty('androidxEspressoCoreVersion') ? rootProject.ext.androidxEspressoCoreVersion : '3.5.1'
+}
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0'
+        // Kotlin plugin added for the parity port. 1.8.22 is the line that supports Gradle 8.0 and AGP 8.0.
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.22'
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    namespace "com.michaeldeguzman.plugins.offlinebm25"
+    compileSdkVersion project.hasProperty('compileSdkVersion') ? rootProject.ext.compileSdkVersion : 33
+    defaultConfig {
+        minSdkVersion project.hasProperty('minSdkVersion') ? rootProject.ext.minSdkVersion : 22
+        targetSdkVersion project.hasProperty('targetSdkVersion') ? rootProject.ext.targetSdkVersion : 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    sourceSets {
+        // Tests shared by the JVM and the emulator. Fixtures are read from tests/fixtures, never copied.
+        test {
+            kotlin.srcDirs += 'src/sharedTest/kotlin'
+        }
+        androidTest {
+            kotlin.srcDirs += 'src/sharedTest/kotlin'
+            assets.srcDirs += ['../tests/fixtures', "$buildDir/charclass-assets"]
+        }
+    }
+    testOptions {
+        unitTests.all {
+            systemProperty 'fixtures.dir', file('../tests/fixtures').absolutePath
+            systemProperty 'charclass.dir', "$buildDir/charclass-assets"
+            systemProperty 'charclass.out', "$buildDir/charclass-out"
+            outputs.upToDateWhen { false }
+            testLogging { showStandardStreams = true }
+        }
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':capacitor-android')
+    implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
+    testImplementation "junit:junit:$junitVersion"
+    // The JVM has no org.json. The port itself uses no dependency. Only the tests parse JSON.
+    testImplementation 'org.json:json:20231013'
+    androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
+}

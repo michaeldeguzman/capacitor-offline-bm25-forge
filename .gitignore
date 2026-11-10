@@ -1,0 +1,25 @@
+# node files
+node_modules
+
+# iOS files
+Pods
+Podfile.lock
+Build
+build
+DerivedData
+xcuserdata
+
+# macOS files
+.DS_Store
+
+# .NET build output
+bin/
+obj/
+
+# Android
+.gradle
+local.properties
+*.iml
+.idea
+captures
+*.apk

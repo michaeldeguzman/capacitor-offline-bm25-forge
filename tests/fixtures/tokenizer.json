@@ -1,0 +1,624 @@
+{
+  "source": "BM25Engine Tokenizer.Tokenize, inputs from TokenizerTests.cs plus extra strings named x01 to x20",
+  "count": 37,
+  "cases": [
+    {
+      "name": "empty",
+      "input": "",
+      "tokens": []
+    },
+    {
+      "name": "whitespace",
+      "input": "   \t\n  ",
+      "tokens": []
+    },
+    {
+      "name": "only-stop-words",
+      "input": "the a an of and or is are",
+      "tokens": []
+    },
+    {
+      "name": "mixed-case",
+      "input": "RUNNING Runner RUNS",
+      "tokens": [
+        "run",
+        "runner",
+        "run"
+      ]
+    },
+    {
+      "name": "punctuation-heavy-v2",
+      "input": "Error: ORA-01400, can\u0027t insert NULL!",
+      "tokens": [
+        "error",
+        "ora",
+        "01400",
+        "can",
+        "t",
+        "insert",
+        "null"
+      ]
+    },
+    {
+      "name": "set-a:ERR-BM25-003",
+      "input": "ERR-BM25-003",
+      "tokens": [
+        "err",
+        "bm25",
+        "003"
+      ]
+    },
+    {
+      "name": "set-a:ERR-VEC-002 ChunkHash",
+      "input": "ERR-VEC-002 ChunkHash",
+      "tokens": [
+        "err",
+        "vec",
+        "002",
+        "chunkhash"
+      ]
+    },
+    {
+      "name": "set-a:TokenizerVersion v1-stemmed-porter",
+      "input": "TokenizerVersion v1-stemmed-porter",
+      "tokens": [
+        "tokenizervers",
+        "v1",
+        "stem",
+        "porter"
+      ]
+    },
+    {
+      "name": "set-a:PostingCandidate DocumentFrequency ChunkTokenCount",
+      "input": "PostingCandidate DocumentFrequency ChunkTokenCount",
+      "tokens": [
+        "postingcandid",
+        "documentfrequ",
+        "chunktokencount"
+      ]
+    },
+    {
+      "name": "set-a:BackfillBM25Index null TokenCount",
+      "input": "BackfillBM25Index null TokenCount",
+      "tokens": [
+        "backfillbm25index",
+        "null",
+        "tokencount"
+      ]
+    },
+    {
+      "name": "chunk68text",
+      "input": "Error Reference and TroubleshootingBM25Engine Ingestion ErrorsThe following error codes are returned by the BM25Engine External Logic component during ingestion.Each code maps to a specific failure condition in the tokenization or posting-write pipeline.ERR-BM25-001: TokenCount is null on DocumentChunk after IndexChunk call. This indicates theBM25Engine.IndexChunk action returned successfully but the ODC orchestration layer failed to writethe TokenCount attribute back to the DocumentChunk entity. Check the DocumentChunk Update stepin the IndexChunks workflow for a missing or mis-mapped attribute assignment.ERR-BM25-002: BM25Term upsert conflict on unique index. Two concurrent ingestion workflowsattempted to create the same stemmed term simultaneously. The unique index on BM25Term.Termcorrectly prevented the duplicate. The second workflow should retry the find-or-create with aGetBM25TermByTerm aggregate. This error is transient and self-resolving on retry.ERR-BM25-003: ScoreQuery",
+      "tokens": [
+        "error",
+        "refer",
+        "troubleshootingbm25engin",
+        "ingest",
+        "errorsth",
+        "follow",
+        "error",
+        "code",
+        "return",
+        "bm25engin",
+        "extern",
+        "logic",
+        "compon",
+        "ingest",
+        "code",
+        "map",
+        "specif",
+        "failur",
+        "condit",
+        "token",
+        "post",
+        "write",
+        "pipelin",
+        "err",
+        "bm25",
+        "001",
+        "tokencount",
+        "null",
+        "documentchunk",
+        "indexchunk",
+        "call",
+        "indic",
+        "thebm25engin",
+        "indexchunk",
+        "action",
+        "return",
+        "successfulli",
+        "odc",
+        "orchestr",
+        "layer",
+        "fail",
+        "writeth",
+        "tokencount",
+        "attribut",
+        "back",
+        "documentchunk",
+        "entiti",
+        "check",
+        "documentchunk",
+        "updat",
+        "stepin",
+        "indexchunk",
+        "workflow",
+        "miss",
+        "mi",
+        "map",
+        "attribut",
+        "assign",
+        "err",
+        "bm25",
+        "002",
+        "bm25term",
+        "upsert",
+        "conflict",
+        "uniqu",
+        "index",
+        "two",
+        "concurr",
+        "ingest",
+        "workflowsattempt",
+        "creat",
+        "stem",
+        "term",
+        "simultan",
+        "uniqu",
+        "index",
+        "bm25term",
+        "termcorrectli",
+        "prevent",
+        "duplic",
+        "second",
+        "workflow",
+        "retri",
+        "find",
+        "creat",
+        "agetbm25termbyterm",
+        "aggreg",
+        "error",
+        "transient",
+        "self",
+        "resolv",
+        "retri",
+        "err",
+        "bm25",
+        "003",
+        "scorequeri"
+      ]
+    },
+    {
+      "name": "chunk69text",
+      "input": "should retry the find-or-create with aGetBM25TermByTerm aggregate. This error is transient and self-resolving on retry.ERR-BM25-003: ScoreQuery returned empty results despite non-empty postings. Most commonlycaused by a mismatch between the TokenizerVersion Site Property and the BM25Engine revisioncurrently deployed. If ingestion used v1-stemmed-porter and query-time TokenizeText is running adifferent revision, query stems will not match indexed stems. Reindex the corpus after updating theBM25Engine revision.ERR-BM25-004: avgChunkLength divide-by-zero in ScoreQuery. BM25Stats.TotalChunks is zero,meaning the RecomputeBM25Stats timer has never run successfully. Trigger the timer manually fromthe ODC Portal and verify BM25Stats contains exactly one row with TotalChunks greater than zerobefore retrying the search.",
+      "tokens": [
+        "retri",
+        "find",
+        "creat",
+        "agetbm25termbyterm",
+        "aggreg",
+        "error",
+        "transient",
+        "self",
+        "resolv",
+        "retri",
+        "err",
+        "bm25",
+        "003",
+        "scorequeri",
+        "return",
+        "empti",
+        "result",
+        "despit",
+        "non",
+        "empti",
+        "post",
+        "commonlycaus",
+        "mismatch",
+        "tokenizervers",
+        "site",
+        "properti",
+        "bm25engin",
+        "revisioncurr",
+        "deploi",
+        "ingest",
+        "us",
+        "v1",
+        "stem",
+        "porter",
+        "queri",
+        "time",
+        "tokenizetext",
+        "run",
+        "adiffer",
+        "revis",
+        "queri",
+        "stem",
+        "will",
+        "match",
+        "index",
+        "stem",
+        "reindex",
+        "corpu",
+        "updat",
+        "thebm25engin",
+        "revis",
+        "err",
+        "bm25",
+        "004",
+        "avgchunklength",
+        "divid",
+        "zero",
+        "scorequeri",
+        "bm25stat",
+        "totalchunk",
+        "zero",
+        "mean",
+        "recomputebm25stat",
+        "timer",
+        "never",
+        "run",
+        "successfulli",
+        "trigger",
+        "timer",
+        "manual",
+        "fromth",
+        "odc",
+        "portal",
+        "verifi",
+        "bm25stat",
+        "contain",
+        "exactli",
+        "on",
+        "row",
+        "totalchunk",
+        "greater",
+        "zerobefor",
+        "retri",
+        "search"
+      ]
+    },
+    {
+      "name": "chunk72text",
+      "input": "Retrieval Quality and ArchitectureWhy Dense Retrieval Alone Is InsufficientSemantic vector search encodes meaning rather than surface form. A query for \u0027document ingestionfailure\u0027 will retrieve content about \u0027file processing errors\u0027 even if those exact words never appeartogether. This generalisation is the core strength of dense retrieval and the reason it outperformskeyword search on paraphrased or conceptual queries.However, this same generalisation becomes a weakness when the query is already precise. Adeveloper searching for ERR-BM25-003 is not expressing a concept \u2014 they are expressing an identifier. The embedding model has no basis to place \u0027ERR-BM25-003\u0027 near \u0027ScoreQuery empty results\u0027 in the vector space.",
+      "tokens": [
+        "retriev",
+        "qualiti",
+        "architecturewhi",
+        "dens",
+        "retriev",
+        "alon",
+        "insufficientsemant",
+        "vector",
+        "search",
+        "encod",
+        "mean",
+        "rather",
+        "surfac",
+        "form",
+        "queri",
+        "document",
+        "ingestionfailur",
+        "will",
+        "retriev",
+        "content",
+        "file",
+        "process",
+        "error",
+        "even",
+        "exact",
+        "word",
+        "never",
+        "appeartogeth",
+        "generalis",
+        "core",
+        "strength",
+        "dens",
+        "retriev",
+        "reason",
+        "outperformskeyword",
+        "search",
+        "paraphras",
+        "conceptu",
+        "queri",
+        "howev",
+        "generalis",
+        "becom",
+        "weak",
+        "queri",
+        "alreadi",
+        "precis",
+        "adevelop",
+        "search",
+        "err",
+        "bm25",
+        "003",
+        "express",
+        "concept",
+        "express",
+        "identifi",
+        "embed",
+        "model",
+        "basi",
+        "place",
+        "err",
+        "bm25",
+        "003",
+        "near",
+        "scorequeri",
+        "empti",
+        "result",
+        "vector",
+        "space"
+      ]
+    },
+    {
+      "name": "realistic-paragraph",
+      "input": "The database connection was refused because the server was overloaded during the nightly indexing process.",
+      "tokens": [
+        "databas",
+        "connect",
+        "refus",
+        "server",
+        "overload",
+        "nightli",
+        "index",
+        "process"
+      ]
+    },
+    {
+      "name": "duplicates",
+      "input": "cache cache cache miss",
+      "tokens": [
+        "cach",
+        "cach",
+        "cach",
+        "miss"
+      ]
+    },
+    {
+      "name": "technical-tokens",
+      "input": "upgrade to v4 now, gpt4 is faster",
+      "tokens": [
+        "upgrad",
+        "v4",
+        "now",
+        "gpt4",
+        "faster"
+      ]
+    },
+    {
+      "name": "stray-single-digit",
+      "input": "item 5 in the list",
+      "tokens": [
+        "item",
+        "list"
+      ]
+    },
+    {
+      "name": "x01-error-code",
+      "input": "ERR-BM25-003",
+      "tokens": [
+        "err",
+        "bm25",
+        "003"
+      ]
+    },
+    {
+      "name": "x02-punct-run",
+      "input": "!!!...???---___((()))[[[]]]{{{}}}",
+      "tokens": []
+    },
+    {
+      "name": "x03-punct-heavy",
+      "input": "Re: [URGENT] pump#4 -- seal/gasket (50%) leaking; call 555-0199 @ 08:30!!",
+      "tokens": [
+        "re",
+        "urgent",
+        "pump",
+        "seal",
+        "gasket",
+        "50",
+        "leak",
+        "call",
+        "555",
+        "0199",
+        "08",
+        "30"
+      ]
+    },
+    {
+      "name": "x04-contractions",
+      "input": "Don\u0027t stop, can\u0027t wait; it\u0027s what they\u0027re doing, isn\u0027t it? We\u0027ve seen y\u0027all\u0027s.",
+      "tokens": [
+        "don",
+        "t",
+        "stop",
+        "can",
+        "t",
+        "wait",
+        "s",
+        "re",
+        "isn",
+        "t",
+        "ve",
+        "seen",
+        "y",
+        "s"
+      ]
+    },
+    {
+      "name": "x05-curly-apostrophe",
+      "input": "It\u2019s the pump\u2019s seal, don\u2019t touch",
+      "tokens": [
+        "s",
+        "pump",
+        "s",
+        "seal",
+        "don",
+        "t",
+        "touch"
+      ]
+    },
+    {
+      "name": "x06-numbers",
+      "input": "7 8 10 007 3.14 1,000 2026-11-10 v2 x9 4u",
+      "tokens": [
+        "10",
+        "007",
+        "14",
+        "000",
+        "2026",
+        "11",
+        "10",
+        "v2",
+        "x9",
+        "4u"
+      ]
+    },
+    {
+      "name": "x07-mixed-case",
+      "input": "RuNnInG PuMpS Generators FIRE-Extinguisher",
+      "tokens": [
+        "run",
+        "pump",
+        "gener",
+        "fire",
+        "extinguish"
+      ]
+    },
+    {
+      "name": "x08-accents",
+      "input": "Caf\u00E9 r\u00E9sum\u00E9 na\u00EFve fa\u00E7ade \u00DCn\u00EFc\u00F6d\u00E9 \u00C5ngstr\u00F6m",
+      "tokens": [
+        "caf\u00E9",
+        "r\u00E9sum\u00E9",
+        "na\u00EFv",
+        "fa\u00E7ad",
+        "\u00FCn\u00EFc\u00F6d\u00E9",
+        "\u00E5ngstr\u00F6m"
+      ]
+    },
+    {
+      "name": "x09-combining",
+      "input": "cafe\u0301 re\u0301sume\u0301 nai\u0308ve",
+      "tokens": [
+        "cafe",
+        "re",
+        "sume",
+        "nai",
+        "ve"
+      ]
+    },
+    {
+      "name": "x10-emoji",
+      "input": "pump \uD83D\uDD27 seal \uD83D\uDE80\uD83D\uDE80 leak \u2764\uFE0F fix",
+      "tokens": [
+        "pump",
+        "seal",
+        "leak",
+        "fix"
+      ]
+    },
+    {
+      "name": "x11-german-eszett",
+      "input": "Stra\u00DFe GRO\u1E9E STRASSE",
+      "tokens": [
+        "stra\u00DFe",
+        "gro\u00DF",
+        "strass"
+      ]
+    },
+    {
+      "name": "x12-greek-sigma",
+      "input": "\u039F\u0394\u03A5\u03A3\u03A3\u0395\u03A5\u03A3 \u03A3\u039F\u03A6\u039F\u03A3 pump",
+      "tokens": [
+        "\u03BF\u03B4\u03C5\u03C3\u03C3\u03B5\u03C5\u03C3",
+        "\u03C3\u03BF\u03C6\u03BF\u03C3",
+        "pump"
+      ]
+    },
+    {
+      "name": "x13-turkish-i",
+      "input": "\u0130STANBUL \u0131sparta I\u0307 ILI",
+      "tokens": [
+        "\u0130stanbul",
+        "\u0131sparta",
+        "ili"
+      ]
+    },
+    {
+      "name": "x14-fullwidth",
+      "input": "\uFF30\uFF35\uFF2D\uFF30 \uFF11\uFF12\uFF13 \uFF17 seal",
+      "tokens": [
+        "\uFF50\uFF55\uFF4D\uFF50",
+        "\uFF11\uFF12\uFF13",
+        "seal"
+      ]
+    },
+    {
+      "name": "x15-arabic-indic-digits",
+      "input": "pump \u0663 \u0661\u0662 \u0660\u0660\u0667 seal",
+      "tokens": [
+        "pump",
+        "\u0661\u0662",
+        "\u0660\u0660\u0667",
+        "seal"
+      ]
+    },
+    {
+      "name": "x16-unicode-spaces",
+      "input": "pump\u00A0seal\u2003leak\u3000fix\u2028gasket\u0085valve\u200Bhose",
+      "tokens": [
+        "pump",
+        "seal",
+        "leak",
+        "fix",
+        "gasket",
+        "valv",
+        "hose"
+      ]
+    },
+    {
+      "name": "x17-supplementary-letters",
+      "input": "\uD835\uDC29\uD835\uDC2E\uD835\uDC26\uD835\uDC29 pump \uD801\uDC28\uD801\uDC29 seal",
+      "tokens": [
+        "pump",
+        "seal"
+      ]
+    },
+    {
+      "name": "x18-cjk",
+      "input": "\u691C\u7D22 search \u30DD\u30F3\u30D7 pump",
+      "tokens": [
+        "\u691C\u7D22",
+        "search",
+        "\u30DD\u30F3\u30D7",
+        "pump"
+      ]
+    },
+    {
+      "name": "x19-superscripts-roman",
+      "input": "x\u00B2 H\u2082O \u2167 \u00BD cup pump\u2460",
+      "tokens": [
+        "x",
+        "h",
+        "o",
+        "cup",
+        "pump"
+      ]
+    },
+    {
+      "name": "x20-whitespace-mix",
+      "input": "pump\tseal\nleak\r\n  gasket\u000Bvalve\fhose",
+      "tokens": [
+        "pump",
+        "seal",
+        "leak",
+        "gasket",
+        "valv",
+        "hose"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,654 @@
+{
+  "source": "BM25Engine PorterStemmer.Stem, inputs from PorterStemmerTests.cs",
+  "count": 162,
+  "pairs": [
+    {
+      "word": "caresses",
+      "stem": "caress"
+    },
+    {
+      "word": "ponies",
+      "stem": "poni"
+    },
+    {
+      "word": "ties",
+      "stem": "ti"
+    },
+    {
+      "word": "caress",
+      "stem": "caress"
+    },
+    {
+      "word": "cats",
+      "stem": "cat"
+    },
+    {
+      "word": "feed",
+      "stem": "feed"
+    },
+    {
+      "word": "agreed",
+      "stem": "agre"
+    },
+    {
+      "word": "plastered",
+      "stem": "plaster"
+    },
+    {
+      "word": "bled",
+      "stem": "bled"
+    },
+    {
+      "word": "motoring",
+      "stem": "motor"
+    },
+    {
+      "word": "sing",
+      "stem": "sing"
+    },
+    {
+      "word": "conflated",
+      "stem": "conflat"
+    },
+    {
+      "word": "troubled",
+      "stem": "troubl"
+    },
+    {
+      "word": "sized",
+      "stem": "size"
+    },
+    {
+      "word": "hopping",
+      "stem": "hop"
+    },
+    {
+      "word": "tanned",
+      "stem": "tan"
+    },
+    {
+      "word": "falling",
+      "stem": "fall"
+    },
+    {
+      "word": "hissing",
+      "stem": "hiss"
+    },
+    {
+      "word": "fizzed",
+      "stem": "fizz"
+    },
+    {
+      "word": "failing",
+      "stem": "fail"
+    },
+    {
+      "word": "filing",
+      "stem": "file"
+    },
+    {
+      "word": "happy",
+      "stem": "happi"
+    },
+    {
+      "word": "sky",
+      "stem": "sky"
+    },
+    {
+      "word": "relational",
+      "stem": "relat"
+    },
+    {
+      "word": "conditional",
+      "stem": "condit"
+    },
+    {
+      "word": "rational",
+      "stem": "ration"
+    },
+    {
+      "word": "valenci",
+      "stem": "valenc"
+    },
+    {
+      "word": "hesitanci",
+      "stem": "hesit"
+    },
+    {
+      "word": "digitizer",
+      "stem": "digit"
+    },
+    {
+      "word": "conformabli",
+      "stem": "conform"
+    },
+    {
+      "word": "radicalli",
+      "stem": "radic"
+    },
+    {
+      "word": "differentli",
+      "stem": "differ"
+    },
+    {
+      "word": "vileli",
+      "stem": "vile"
+    },
+    {
+      "word": "analogousli",
+      "stem": "analog"
+    },
+    {
+      "word": "vietnamization",
+      "stem": "vietnam"
+    },
+    {
+      "word": "predication",
+      "stem": "predic"
+    },
+    {
+      "word": "operator",
+      "stem": "oper"
+    },
+    {
+      "word": "feudalism",
+      "stem": "feudal"
+    },
+    {
+      "word": "decisiveness",
+      "stem": "decis"
+    },
+    {
+      "word": "hopefulness",
+      "stem": "hope"
+    },
+    {
+      "word": "callousness",
+      "stem": "callous"
+    },
+    {
+      "word": "formaliti",
+      "stem": "formal"
+    },
+    {
+      "word": "sensitiviti",
+      "stem": "sensit"
+    },
+    {
+      "word": "sensibiliti",
+      "stem": "sensibl"
+    },
+    {
+      "word": "triplicate",
+      "stem": "triplic"
+    },
+    {
+      "word": "formative",
+      "stem": "form"
+    },
+    {
+      "word": "formalize",
+      "stem": "formal"
+    },
+    {
+      "word": "electriciti",
+      "stem": "electr"
+    },
+    {
+      "word": "electrical",
+      "stem": "electr"
+    },
+    {
+      "word": "hopeful",
+      "stem": "hope"
+    },
+    {
+      "word": "goodness",
+      "stem": "good"
+    },
+    {
+      "word": "revival",
+      "stem": "reviv"
+    },
+    {
+      "word": "allowance",
+      "stem": "allow"
+    },
+    {
+      "word": "inference",
+      "stem": "infer"
+    },
+    {
+      "word": "airliner",
+      "stem": "airlin"
+    },
+    {
+      "word": "gyroscopic",
+      "stem": "gyroscop"
+    },
+    {
+      "word": "adjustable",
+      "stem": "adjust"
+    },
+    {
+      "word": "defensible",
+      "stem": "defens"
+    },
+    {
+      "word": "irritant",
+      "stem": "irrit"
+    },
+    {
+      "word": "replacement",
+      "stem": "replac"
+    },
+    {
+      "word": "adjustment",
+      "stem": "adjust"
+    },
+    {
+      "word": "dependent",
+      "stem": "depend"
+    },
+    {
+      "word": "adoption",
+      "stem": "adopt"
+    },
+    {
+      "word": "homologou",
+      "stem": "homolog"
+    },
+    {
+      "word": "communism",
+      "stem": "commun"
+    },
+    {
+      "word": "activate",
+      "stem": "activ"
+    },
+    {
+      "word": "angulariti",
+      "stem": "angular"
+    },
+    {
+      "word": "homologous",
+      "stem": "homolog"
+    },
+    {
+      "word": "effective",
+      "stem": "effect"
+    },
+    {
+      "word": "bowdlerize",
+      "stem": "bowdler"
+    },
+    {
+      "word": "probate",
+      "stem": "probat"
+    },
+    {
+      "word": "rate",
+      "stem": "rate"
+    },
+    {
+      "word": "cease",
+      "stem": "ceas"
+    },
+    {
+      "word": "controll",
+      "stem": "control"
+    },
+    {
+      "word": "roll",
+      "stem": "roll"
+    },
+    {
+      "word": "abandoned",
+      "stem": "abandon"
+    },
+    {
+      "word": "addle",
+      "stem": "addl"
+    },
+    {
+      "word": "alcibiades",
+      "stem": "alcibiad"
+    },
+    {
+      "word": "anticipates",
+      "stem": "anticip"
+    },
+    {
+      "word": "arrived",
+      "stem": "arriv"
+    },
+    {
+      "word": "austereness",
+      "stem": "auster"
+    },
+    {
+      "word": "baths",
+      "stem": "bath"
+    },
+    {
+      "word": "benefits",
+      "stem": "benefit"
+    },
+    {
+      "word": "blois",
+      "stem": "bloi"
+    },
+    {
+      "word": "breastplate",
+      "stem": "breastplat"
+    },
+    {
+      "word": "buttocks",
+      "stem": "buttock"
+    },
+    {
+      "word": "carthage",
+      "stem": "carthag"
+    },
+    {
+      "word": "chariness",
+      "stem": "chari"
+    },
+    {
+      "word": "claiming",
+      "stem": "claim"
+    },
+    {
+      "word": "comedy",
+      "stem": "comedi"
+    },
+    {
+      "word": "conclusions",
+      "stem": "conclus"
+    },
+    {
+      "word": "constantly",
+      "stem": "constantli"
+    },
+    {
+      "word": "correctioner",
+      "stem": "correction"
+    },
+    {
+      "word": "credulity",
+      "stem": "credul"
+    },
+    {
+      "word": "dally",
+      "stem": "dalli"
+    },
+    {
+      "word": "defile",
+      "stem": "defil"
+    },
+    {
+      "word": "desirers",
+      "stem": "desir"
+    },
+    {
+      "word": "disaster",
+      "stem": "disast"
+    },
+    {
+      "word": "dispraising",
+      "stem": "disprais"
+    },
+    {
+      "word": "doubtful",
+      "stem": "doubt"
+    },
+    {
+      "word": "easing",
+      "stem": "eas"
+    },
+    {
+      "word": "endeared",
+      "stem": "endear"
+    },
+    {
+      "word": "epileptic",
+      "stem": "epilept"
+    },
+    {
+      "word": "exacting",
+      "stem": "exact"
+    },
+    {
+      "word": "extravagant",
+      "stem": "extravag"
+    },
+    {
+      "word": "fearfull",
+      "stem": "fearful"
+    },
+    {
+      "word": "flatness",
+      "stem": "flat"
+    },
+    {
+      "word": "forgetful",
+      "stem": "forget"
+    },
+    {
+      "word": "furlongs",
+      "stem": "furlong"
+    },
+    {
+      "word": "gilliams",
+      "stem": "gilliam"
+    },
+    {
+      "word": "grappling",
+      "stem": "grappl"
+    },
+    {
+      "word": "hammers",
+      "stem": "hammer"
+    },
+    {
+      "word": "helping",
+      "stem": "help"
+    },
+    {
+      "word": "hospitality",
+      "stem": "hospit"
+    },
+    {
+      "word": "impasted",
+      "stem": "impast"
+    },
+    {
+      "word": "indigne",
+      "stem": "indign"
+    },
+    {
+      "word": "insisting",
+      "stem": "insist"
+    },
+    {
+      "word": "isbels",
+      "stem": "isbel"
+    },
+    {
+      "word": "kings",
+      "stem": "king"
+    },
+    {
+      "word": "leaps",
+      "stem": "leap"
+    },
+    {
+      "word": "living",
+      "stem": "live"
+    },
+    {
+      "word": "magnificoes",
+      "stem": "magnifico"
+    },
+    {
+      "word": "matters",
+      "stem": "matter"
+    },
+    {
+      "word": "mille",
+      "stem": "mill"
+    },
+    {
+      "word": "monarchy",
+      "stem": "monarchi"
+    },
+    {
+      "word": "musty",
+      "stem": "musti"
+    },
+    {
+      "word": "nodded",
+      "stem": "nod"
+    },
+    {
+      "word": "offending",
+      "stem": "offend"
+    },
+    {
+      "word": "outworths",
+      "stem": "outworth"
+    },
+    {
+      "word": "particle",
+      "stem": "particl"
+    },
+    {
+      "word": "perdurable",
+      "stem": "perdur"
+    },
+    {
+      "word": "piercy",
+      "stem": "pierci"
+    },
+    {
+      "word": "poets",
+      "stem": "poet"
+    },
+    {
+      "word": "precedence",
+      "stem": "preced"
+    },
+    {
+      "word": "privileged",
+      "stem": "privileg"
+    },
+    {
+      "word": "proudly",
+      "stem": "proudli"
+    },
+    {
+      "word": "questioning",
+      "stem": "question"
+    },
+    {
+      "word": "recantation",
+      "stem": "recant"
+    },
+    {
+      "word": "remembered",
+      "stem": "rememb"
+    },
+    {
+      "word": "restitution",
+      "stem": "restitut"
+    },
+    {
+      "word": "robustious",
+      "stem": "robusti"
+    },
+    {
+      "word": "sanctified",
+      "stem": "sanctifi"
+    },
+    {
+      "word": "scrolls",
+      "stem": "scroll"
+    },
+    {
+      "word": "sexes",
+      "stem": "sex"
+    },
+    {
+      "word": "sieve",
+      "stem": "siev"
+    },
+    {
+      "word": "smiles",
+      "stem": "smile"
+    },
+    {
+      "word": "speculation",
+      "stem": "specul"
+    },
+    {
+      "word": "statues",
+      "stem": "statu"
+    },
+    {
+      "word": "strossers",
+      "stem": "strosser"
+    },
+    {
+      "word": "suppliants",
+      "stem": "suppliant"
+    },
+    {
+      "word": "tainting",
+      "stem": "taint"
+    },
+    {
+      "word": "thankings",
+      "stem": "thank"
+    },
+    {
+      "word": "tolling",
+      "stem": "toll"
+    },
+    {
+      "word": "tribunes",
+      "stem": "tribun"
+    },
+    {
+      "word": "unattended",
+      "stem": "unattend"
+    },
+    {
+      "word": "ungarter",
+      "stem": "ungart"
+    },
+    {
+      "word": "unrelenting",
+      "stem": "unrel"
+    },
+    {
+      "word": "urchins",
+      "stem": "urchin"
+    },
+    {
+      "word": "vices",
+      "stem": "vice"
+    },
+    {
+      "word": "warble",
+      "stem": "warbl"
+    },
+    {
+      "word": "whitely",
+      "stem": "white"
+    },
+    {
+      "word": "worths",
+      "stem": "worth"
+    }
+  ]
+}

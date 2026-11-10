@@ -1,0 +1,26 @@
+{
+  "KeywordItem": {
+    "Id": "p14",
+    "Text": "Pump seal replacement. Replace the mechanical seal when liquid drips from the shaft gland.",
+    "Metadata": "Pump seal replacement"
+  },
+  "KeywordMatch": {
+    "Id": "p14",
+    "Score": 6.5452899339377755,
+    "Metadata": "Pump seal replacement",
+    "MatchedTerms": 2
+  },
+  "KeywordCollectionInfo": {
+    "Exists": true,
+    "Count": 50,
+    "UniqueTerms": 359,
+    "AvgLength": 11.9,
+    "TokenizerVersion": 2,
+    "CurrentTokenizerVersion": 2,
+    "NeedsReindex": false
+  },
+  "Result": {
+    "Success": true,
+    "ErrorMessage": ""
+  }
+}

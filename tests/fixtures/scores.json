@@ -1,0 +1,799 @@
+{
+  "source": "BM25Engine BM25Scorer.Score over docs/seed-procedures.json indexed as Title \u002B \u0022. \u0022 \u002B Body",
+  "k1": 1.2,
+  "b": 0.75,
+  "totalDocuments": 50,
+  "avgLength": 11.9,
+  "documents": [
+    {
+      "id": "p01",
+      "text": "Bearing wear inspection. Listen for a grinding or rough rumbling noise from the pump or its rotating shaft housing, feel for heat and play in the bearing, and replace it if worn.",
+      "tokenCount": 18
+    },
+    {
+      "id": "p02",
+      "text": "Belt tension adjustment. Check drive belt deflection midway between the pulleys and tighten the tensioner until it is within specification.",
+      "tokenCount": 13
+    },
+    {
+      "id": "p03",
+      "text": "Hydraulic hose leak repair. Depressurise the hydraulic system, locate the weeping fitting, replace the damaged hose and bleed out the air.",
+      "tokenCount": 15
+    },
+    {
+      "id": "p04",
+      "text": "Air compressor tank drain. Open the receiver drain valve daily to remove condensate water from the tank.",
+      "tokenCount": 13
+    },
+    {
+      "id": "p05",
+      "text": "Intake filter replacement. Remove the intake filter element, inspect it for dust clogging and fit a new element.",
+      "tokenCount": 13
+    },
+    {
+      "id": "p06",
+      "text": "Lockout tagout procedure. Isolate all energy sources, apply personal locks and danger tags, and verify zero energy before starting work.",
+      "tokenCount": 16
+    },
+    {
+      "id": "p07",
+      "text": "Motor overheating diagnosis. Check ventilation, measure the current draw and inspect the cooling fins for blockages.",
+      "tokenCount": 12
+    },
+    {
+      "id": "p08",
+      "text": "Gearbox oil change. Drain the old lubricant while warm and refill with the specified gear oil up to the sight glass.",
+      "tokenCount": 13
+    },
+    {
+      "id": "p09",
+      "text": "Conveyor belt tracking. Adjust the idler rollers so the belt runs centred on the frame.",
+      "tokenCount": 10
+    },
+    {
+      "id": "p10",
+      "text": "Boiler water level check. Verify the gauge glass shows a normal water level and blow down the low water cutoff.",
+      "tokenCount": 15
+    },
+    {
+      "id": "p11",
+      "text": "Fire extinguisher inspection. Check the pressure gauge is in the green zone, the seal is intact and the hose is undamaged; record it monthly.",
+      "tokenCount": 14
+    },
+    {
+      "id": "p12",
+      "text": "Emergency eyewash test. Activate the eyewash station weekly and flush until the water runs clear.",
+      "tokenCount": 11
+    },
+    {
+      "id": "p13",
+      "text": "Forklift pre-start check. Inspect tyres, forks, chains, horn, lights and hydraulic fluid before operating the truck.",
+      "tokenCount": 14
+    },
+    {
+      "id": "p14",
+      "text": "Pump seal replacement. Replace the mechanical seal when liquid drips from the shaft gland.",
+      "tokenCount": 10
+    },
+    {
+      "id": "p15",
+      "text": "Pump cavitation troubleshooting. When flow drops and vapour bubbles form at the impeller, check suction pressure and clean the inlet strainer.",
+      "tokenCount": 15
+    },
+    {
+      "id": "p16",
+      "text": "Switchboard thermal scan. Use an infrared camera to find hot connections inside the electrical switchboard.",
+      "tokenCount": 12
+    },
+    {
+      "id": "p17",
+      "text": "Circuit breaker reset. Identify the tripped breaker, find and fix the cause of the fault, then reset it.",
+      "tokenCount": 11
+    },
+    {
+      "id": "p18",
+      "text": "Generator load test. Run the standby generator under load once a month for thirty minutes.",
+      "tokenCount": 10
+    },
+    {
+      "id": "p19",
+      "text": "Battery terminal cleaning. Disconnect the leads, scrub corrosion from the battery posts with baking soda solution and apply terminal grease.",
+      "tokenCount": 15
+    },
+    {
+      "id": "p20",
+      "text": "Condenser coil cleaning. Clean the condenser coil fins with a soft brush and coil cleaner.",
+      "tokenCount": 11
+    },
+    {
+      "id": "p21",
+      "text": "Refrigerant leak detection. Use an electronic leak detector around the joints when the cooling system loses its charge.",
+      "tokenCount": 13
+    },
+    {
+      "id": "p22",
+      "text": "Thermostat calibration. Compare the thermostat reading with a reference thermometer and adjust the offset.",
+      "tokenCount": 9
+    },
+    {
+      "id": "p23",
+      "text": "Chiller startup. Open the water valves, start the chilled water pump, then start the chiller compressor.",
+      "tokenCount": 12
+    },
+    {
+      "id": "p24",
+      "text": "Cooling tower water treatment. Test conductivity and dose biocide to control algae and legionella.",
+      "tokenCount": 11
+    },
+    {
+      "id": "p25",
+      "text": "Valve packing adjustment. Tighten the gland nuts evenly when the valve stem weeps.",
+      "tokenCount": 10
+    },
+    {
+      "id": "p26",
+      "text": "Pressure relief valve test. Lift the test lever to confirm the safety valve opens and reseats.",
+      "tokenCount": 12
+    },
+    {
+      "id": "p27",
+      "text": "Steam trap inspection. Check the trap discharge with an ultrasonic tester; traps that fail open blow live steam.",
+      "tokenCount": 14
+    },
+    {
+      "id": "p28",
+      "text": "Welding machine setup. Set the amperage for the rod size and attach the earth clamp close to the weld.",
+      "tokenCount": 12
+    },
+    {
+      "id": "p29",
+      "text": "Lathe chuck maintenance. Clean and lubricate the chuck jaws and check for runout.",
+      "tokenCount": 9
+    },
+    {
+      "id": "p30",
+      "text": "Grinding wheel ring test. Tap a new abrasive wheel and listen for a clear ring before mounting it.",
+      "tokenCount": 12
+    },
+    {
+      "id": "p31",
+      "text": "Compressed air leak survey. Walk the air lines with an ultrasonic detector during quiet hours and tag every leak.",
+      "tokenCount": 14
+    },
+    {
+      "id": "p32",
+      "text": "Pipe insulation repair. Replace damaged lagging on hot pipes to prevent heat loss and burns.",
+      "tokenCount": 12
+    },
+    {
+      "id": "p33",
+      "text": "Roof drain clearing. Remove leaves and debris from the roof outlets before the wet season.",
+      "tokenCount": 10
+    },
+    {
+      "id": "p34",
+      "text": "Door closer adjustment. Adjust the closing and latching speed valves so the door closes fully without slamming.",
+      "tokenCount": 13
+    },
+    {
+      "id": "p35",
+      "text": "Elevator pit inspection. Check the lift pit for water, debris and the condition of the buffers.",
+      "tokenCount": 10
+    },
+    {
+      "id": "p36",
+      "text": "Light fitting relamping. Replace failed lamps and dispose of the old tubes as hazardous waste.",
+      "tokenCount": 11
+    },
+    {
+      "id": "p37",
+      "text": "Emergency lighting test. Simulate a mains failure and confirm the exit signs stay lit for ninety minutes.",
+      "tokenCount": 13
+    },
+    {
+      "id": "p38",
+      "text": "Water heater anode check. Remove the sacrificial anode rod and replace it if heavily corroded.",
+      "tokenCount": 11
+    },
+    {
+      "id": "p39",
+      "text": "Backflow preventer test. Test the testable backflow device every year with a differential pressure gauge.",
+      "tokenCount": 12
+    },
+    {
+      "id": "p40",
+      "text": "Sump pump float test. Pour water into the pit and confirm the float switch starts the pump.",
+      "tokenCount": 12
+    },
+    {
+      "id": "p41",
+      "text": "Diesel fuel polishing. Filter the stored diesel to remove water and microbial growth.",
+      "tokenCount": 10
+    },
+    {
+      "id": "p42",
+      "text": "Fan vibration analysis. Measure vibration on the fan bearings; high readings indicate imbalance or misalignment.",
+      "tokenCount": 12
+    },
+    {
+      "id": "p43",
+      "text": "Shaft alignment. Use a laser alignment tool to line up the motor and pump shafts.",
+      "tokenCount": 10
+    },
+    {
+      "id": "p44",
+      "text": "Roller chain lubrication. Apply chain oil to the drive chains and check them for elongation.",
+      "tokenCount": 10
+    },
+    {
+      "id": "p45",
+      "text": "Vehicle tyre pressure check. Check and inflate the vehicle tyres to the placard pressure while they are cold.",
+      "tokenCount": 11
+    },
+    {
+      "id": "p46",
+      "text": "Ladder inspection. Inspect rungs, rails and feet before use and tag out any damaged ladder.",
+      "tokenCount": 10
+    },
+    {
+      "id": "p47",
+      "text": "Spill kit restock. Check the spill kit contents and replace used absorbent pads.",
+      "tokenCount": 11
+    },
+    {
+      "id": "p48",
+      "text": "Scaffold tag check. Confirm the scaffold has a current green tag before climbing.",
+      "tokenCount": 9
+    },
+    {
+      "id": "p49",
+      "text": "Solar panel cleaning. Rinse dust from the photovoltaic panels in the early morning.",
+      "tokenCount": 9
+    },
+    {
+      "id": "p50",
+      "text": "UPS battery replacement. Swap the end-of-life batteries in the uninterruptible power supply.",
+      "tokenCount": 10
+    }
+  ],
+  "queryCount": 20,
+  "queries": [
+    {
+      "kind": "bakeoff",
+      "query": "pump is making a grinding noise",
+      "target": "p01",
+      "queryTerms": [
+        "pump",
+        "make",
+        "grind",
+        "nois"
+      ],
+      "hasTies": true,
+      "results": [
+        {
+          "id": "p01",
+          "score": 7.1107747493573665
+        },
+        {
+          "id": "p30",
+          "score": 3.00520379536572
+        },
+        {
+          "id": "p40",
+          "score": 2.8258535013591404
+        },
+        {
+          "id": "p14",
+          "score": 2.2039809592741806
+        },
+        {
+          "id": "p43",
+          "score": 2.2039809592741806
+        },
+        {
+          "id": "p23",
+          "score": 2.05296589544877
+        },
+        {
+          "id": "p15",
+          "score": 1.8616297574538898
+        }
+      ]
+    },
+    {
+      "kind": "bakeoff",
+      "query": "the conveyor keeps wandering off to the edge",
+      "target": "p09",
+      "queryTerms": [
+        "conveyor",
+        "keep",
+        "wander",
+        "edg"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p09",
+          "score": 3.772787843663716
+        }
+      ]
+    },
+    {
+      "kind": "bakeoff",
+      "query": "make sure nobody gets electrocuted while I fix the machine",
+      "target": "p06",
+      "queryTerms": [
+        "make",
+        "sure",
+        "nobodi",
+        "get",
+        "electrocut",
+        "fix",
+        "machin"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p17",
+          "score": 3.6389483064426926
+        },
+        {
+          "id": "p28",
+          "score": 3.5142793503788012
+        }
+      ]
+    },
+    {
+      "kind": "bakeoff",
+      "query": "oil spraying out of a high pressure line",
+      "target": "p03",
+      "queryTerms": [
+        "oil",
+        "sprai",
+        "high",
+        "pressur",
+        "line"
+      ],
+      "hasTies": true,
+      "results": [
+        {
+          "id": "p08",
+          "score": 4.041295300960198
+        },
+        {
+          "id": "p42",
+          "score": 3.5142793503788012
+        },
+        {
+          "id": "p43",
+          "score": 3.2262649654375757
+        },
+        {
+          "id": "p44",
+          "score": 3.2262649654375757
+        },
+        {
+          "id": "p45",
+          "score": 3.128784009118373
+        },
+        {
+          "id": "p31",
+          "score": 2.8124938975510325
+        },
+        {
+          "id": "p26",
+          "score": 2.2194476593041825
+        },
+        {
+          "id": "p39",
+          "score": 2.2194476593041825
+        },
+        {
+          "id": "p11",
+          "score": 2.0771246886327357
+        },
+        {
+          "id": "p15",
+          "score": 2.0125954439047593
+        }
+      ]
+    },
+    {
+      "kind": "bakeoff",
+      "query": "the electric motor feels way too hot",
+      "target": "p07",
+      "queryTerms": [
+        "electr",
+        "motor",
+        "feel",
+        "wai",
+        "hot"
+      ],
+      "hasTies": true,
+      "results": [
+        {
+          "id": "p16",
+          "score": 6.5194831457445215
+        },
+        {
+          "id": "p43",
+          "score": 3.2262649654375757
+        },
+        {
+          "id": "p07",
+          "score": 3.00520379536572
+        },
+        {
+          "id": "p32",
+          "score": 3.00520379536572
+        },
+        {
+          "id": "p01",
+          "score": 2.9150653152652706
+        }
+      ]
+    },
+    {
+      "kind": "bakeoff",
+      "query": "backup power plant needs its monthly run",
+      "target": "p18",
+      "queryTerms": [
+        "backup",
+        "power",
+        "plant",
+        "need",
+        "monthli",
+        "run"
+      ],
+      "hasTies": true,
+      "results": [
+        {
+          "id": "p50",
+          "score": 3.772787843663716
+        },
+        {
+          "id": "p11",
+          "score": 3.2889247785696876
+        },
+        {
+          "id": "p09",
+          "score": 2.866279548406789
+        },
+        {
+          "id": "p18",
+          "score": 2.866279548406789
+        },
+        {
+          "id": "p12",
+          "score": 2.7645983661613767
+        }
+      ]
+    },
+    {
+      "kind": "bakeoff",
+      "query": "white crusty buildup on the car battery",
+      "target": "p19",
+      "queryTerms": [
+        "white",
+        "crusti",
+        "buildup",
+        "car",
+        "batteri"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p50",
+          "score": 4.341308974663595
+        },
+        {
+          "id": "p19",
+          "score": 3.863308231184608
+        }
+      ]
+    },
+    {
+      "kind": "bakeoff",
+      "query": "aircon is not blowing cold any more",
+      "target": "p21",
+      "queryTerms": [
+        "aircon",
+        "blow",
+        "cold"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p45",
+          "score": 3.6389483064426926
+        },
+        {
+          "id": "p27",
+          "score": 2.8124938975510325
+        },
+        {
+          "id": "p10",
+          "score": 2.7251192165777516
+        }
+      ]
+    },
+    {
+      "kind": "bakeoff",
+      "query": "signs above the exits during a blackout",
+      "target": "p37",
+      "queryTerms": [
+        "sign",
+        "exit",
+        "blackout"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p37",
+          "score": 6.795739310596328
+        }
+      ]
+    },
+    {
+      "kind": "bakeoff",
+      "query": "red cylinder for putting out flames",
+      "target": "p11",
+      "queryTerms": [
+        "red",
+        "cylind",
+        "put",
+        "flame"
+      ],
+      "hasTies": false,
+      "results": []
+    },
+    {
+      "kind": "keyword",
+      "query": "pump seal",
+      "target": null,
+      "queryTerms": [
+        "pump",
+        "seal"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p14",
+          "score": 6.5452899339377755
+        },
+        {
+          "id": "p40",
+          "score": 2.8258535013591404
+        },
+        {
+          "id": "p11",
+          "score": 2.8124938975510325
+        },
+        {
+          "id": "p43",
+          "score": 2.2039809592741806
+        },
+        {
+          "id": "p23",
+          "score": 2.05296589544877
+        },
+        {
+          "id": "p15",
+          "score": 1.8616297574538898
+        },
+        {
+          "id": "p01",
+          "score": 1.7029180319999746
+        }
+      ]
+    },
+    {
+      "kind": "keyword",
+      "query": "generator",
+      "target": null,
+      "queryTerms": [
+        "gener"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p18",
+          "score": 5.0767180937284095
+        }
+      ]
+    },
+    {
+      "kind": "keyword",
+      "query": "fire extinguisher",
+      "target": null,
+      "queryTerms": [
+        "fire",
+        "extinguish"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p11",
+          "score": 6.577849557139375
+        }
+      ]
+    },
+    {
+      "kind": "keyword",
+      "query": "bearing",
+      "target": null,
+      "queryTerms": [
+        "bear"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p01",
+          "score": 3.6239019373081236
+        },
+        {
+          "id": "p42",
+          "score": 3.00520379536572
+        }
+      ]
+    },
+    {
+      "kind": "keyword",
+      "query": "hydraulic hose leak",
+      "target": null,
+      "queryTerms": [
+        "hydraul",
+        "hose",
+        "leak"
+      ],
+      "hasTies": true,
+      "results": [
+        {
+          "id": "p03",
+          "score": 10.147667913853997
+        },
+        {
+          "id": "p21",
+          "score": 3.590369109266144
+        },
+        {
+          "id": "p31",
+          "score": 3.509525171354222
+        },
+        {
+          "id": "p11",
+          "score": 2.8124938975510325
+        },
+        {
+          "id": "p13",
+          "score": 2.8124938975510325
+        }
+      ]
+    },
+    {
+      "kind": "keyword",
+      "query": "lockout tagout",
+      "target": null,
+      "queryTerms": [
+        "lockout",
+        "tagout"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p06",
+          "score": 6.181460899528029
+        }
+      ]
+    },
+    {
+      "kind": "keyword",
+      "query": "belt tension",
+      "target": null,
+      "queryTerms": [
+        "belt",
+        "tension"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p02",
+          "score": 8.767178000445794
+        },
+        {
+          "id": "p09",
+          "score": 4.341308974663595
+        }
+      ]
+    },
+    {
+      "kind": "keyword",
+      "query": "water level",
+      "target": null,
+      "queryTerms": [
+        "water",
+        "level"
+      ],
+      "hasTies": true,
+      "results": [
+        {
+          "id": "p10",
+          "score": 7.0189601968113795
+        },
+        {
+          "id": "p23",
+          "score": 2.3052856053028457
+        },
+        {
+          "id": "p35",
+          "score": 1.7979720383001558
+        },
+        {
+          "id": "p41",
+          "score": 1.7979720383001558
+        },
+        {
+          "id": "p12",
+          "score": 1.7341890333939618
+        },
+        {
+          "id": "p24",
+          "score": 1.7341890333939618
+        },
+        {
+          "id": "p38",
+          "score": 1.7341890333939618
+        },
+        {
+          "id": "p40",
+          "score": 1.6747763904531712
+        },
+        {
+          "id": "p04",
+          "score": 1.6192998077734564
+        }
+      ]
+    },
+    {
+      "kind": "keyword",
+      "query": "battery terminal corrosion",
+      "target": null,
+      "queryTerms": [
+        "batteri",
+        "termin",
+        "corros"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p19",
+          "score": 11.567802204886142
+        },
+        {
+          "id": "p50",
+          "score": 4.341308974663595
+        }
+      ]
+    },
+    {
+      "kind": "keyword",
+      "query": "emergency eyewash",
+      "target": null,
+      "queryTerms": [
+        "emerg",
+        "eyewash"
+      ],
+      "hasTies": false,
+      "results": [
+        {
+          "id": "p12",
+          "score": 8.065938266059133
+        },
+        {
+          "id": "p37",
+          "score": 2.9056571109406506
+        }
+      ]
+    }
+  ]
+}

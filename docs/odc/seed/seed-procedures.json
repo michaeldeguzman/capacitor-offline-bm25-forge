@@ -1,0 +1,302 @@
+[
+  {
+    "Code": "p01",
+    "Title": "Bearing wear inspection",
+    "Body": "Listen for a grinding or rough rumbling noise from the pump or its rotating shaft housing, feel for heat and play in the bearing, and replace it if worn.",
+    "Category": "Mechanical"
+  },
+  {
+    "Code": "p02",
+    "Title": "Belt tension adjustment",
+    "Body": "Check drive belt deflection midway between the pulleys and tighten the tensioner until it is within specification.",
+    "Category": "Mechanical"
+  },
+  {
+    "Code": "p03",
+    "Title": "Hydraulic hose leak repair",
+    "Body": "Depressurise the hydraulic system, locate the weeping fitting, replace the damaged hose and bleed out the air.",
+    "Category": "Hydraulics & Pneumatics"
+  },
+  {
+    "Code": "p04",
+    "Title": "Air compressor tank drain",
+    "Body": "Open the receiver drain valve daily to remove condensate water from the tank.",
+    "Category": "Hydraulics & Pneumatics"
+  },
+  {
+    "Code": "p05",
+    "Title": "Intake filter replacement",
+    "Body": "Remove the intake filter element, inspect it for dust clogging and fit a new element.",
+    "Category": "Hydraulics & Pneumatics"
+  },
+  {
+    "Code": "p06",
+    "Title": "Lockout tagout procedure",
+    "Body": "Isolate all energy sources, apply personal locks and danger tags, and verify zero energy before starting work.",
+    "Category": "Safety"
+  },
+  {
+    "Code": "p07",
+    "Title": "Motor overheating diagnosis",
+    "Body": "Check ventilation, measure the current draw and inspect the cooling fins for blockages.",
+    "Category": "Electrical"
+  },
+  {
+    "Code": "p08",
+    "Title": "Gearbox oil change",
+    "Body": "Drain the old lubricant while warm and refill with the specified gear oil up to the sight glass.",
+    "Category": "Mechanical"
+  },
+  {
+    "Code": "p09",
+    "Title": "Conveyor belt tracking",
+    "Body": "Adjust the idler rollers so the belt runs centred on the frame.",
+    "Category": "Mechanical"
+  },
+  {
+    "Code": "p10",
+    "Title": "Boiler water level check",
+    "Body": "Verify the gauge glass shows a normal water level and blow down the low water cutoff.",
+    "Category": "Steam & Boilers"
+  },
+  {
+    "Code": "p11",
+    "Title": "Fire extinguisher inspection",
+    "Body": "Check the pressure gauge is in the green zone, the seal is intact and the hose is undamaged; record it monthly.",
+    "Category": "Safety"
+  },
+  {
+    "Code": "p12",
+    "Title": "Emergency eyewash test",
+    "Body": "Activate the eyewash station weekly and flush until the water runs clear.",
+    "Category": "Safety"
+  },
+  {
+    "Code": "p13",
+    "Title": "Forklift pre-start check",
+    "Body": "Inspect tyres, forks, chains, horn, lights and hydraulic fluid before operating the truck.",
+    "Category": "Vehicles"
+  },
+  {
+    "Code": "p14",
+    "Title": "Pump seal replacement",
+    "Body": "Replace the mechanical seal when liquid drips from the shaft gland.",
+    "Category": "Mechanical"
+  },
+  {
+    "Code": "p15",
+    "Title": "Pump cavitation troubleshooting",
+    "Body": "When flow drops and vapour bubbles form at the impeller, check suction pressure and clean the inlet strainer.",
+    "Category": "Mechanical"
+  },
+  {
+    "Code": "p16",
+    "Title": "Switchboard thermal scan",
+    "Body": "Use an infrared camera to find hot connections inside the electrical switchboard.",
+    "Category": "Electrical"
+  },
+  {
+    "Code": "p17",
+    "Title": "Circuit breaker reset",
+    "Body": "Identify the tripped breaker, find and fix the cause of the fault, then reset it.",
+    "Category": "Electrical"
+  },
+  {
+    "Code": "p18",
+    "Title": "Generator load test",
+    "Body": "Run the standby generator under load once a month for thirty minutes.",
+    "Category": "Electrical"
+  },
+  {
+    "Code": "p19",
+    "Title": "Battery terminal cleaning",
+    "Body": "Disconnect the leads, scrub corrosion from the battery posts with baking soda solution and apply terminal grease.",
+    "Category": "Electrical"
+  },
+  {
+    "Code": "p20",
+    "Title": "Condenser coil cleaning",
+    "Body": "Clean the condenser coil fins with a soft brush and coil cleaner.",
+    "Category": "HVAC & Refrigeration"
+  },
+  {
+    "Code": "p21",
+    "Title": "Refrigerant leak detection",
+    "Body": "Use an electronic leak detector around the joints when the cooling system loses its charge.",
+    "Category": "HVAC & Refrigeration"
+  },
+  {
+    "Code": "p22",
+    "Title": "Thermostat calibration",
+    "Body": "Compare the thermostat reading with a reference thermometer and adjust the offset.",
+    "Category": "HVAC & Refrigeration"
+  },
+  {
+    "Code": "p23",
+    "Title": "Chiller startup",
+    "Body": "Open the water valves, start the chilled water pump, then start the chiller compressor.",
+    "Category": "HVAC & Refrigeration"
+  },
+  {
+    "Code": "p24",
+    "Title": "Cooling tower water treatment",
+    "Body": "Test conductivity and dose biocide to control algae and legionella.",
+    "Category": "HVAC & Refrigeration"
+  },
+  {
+    "Code": "p25",
+    "Title": "Valve packing adjustment",
+    "Body": "Tighten the gland nuts evenly when the valve stem weeps.",
+    "Category": "Steam & Boilers"
+  },
+  {
+    "Code": "p26",
+    "Title": "Pressure relief valve test",
+    "Body": "Lift the test lever to confirm the safety valve opens and reseats.",
+    "Category": "Steam & Boilers"
+  },
+  {
+    "Code": "p27",
+    "Title": "Steam trap inspection",
+    "Body": "Check the trap discharge with an ultrasonic tester; traps that fail open blow live steam.",
+    "Category": "Steam & Boilers"
+  },
+  {
+    "Code": "p28",
+    "Title": "Welding machine setup",
+    "Body": "Set the amperage for the rod size and attach the earth clamp close to the weld.",
+    "Category": "Fabrication"
+  },
+  {
+    "Code": "p29",
+    "Title": "Lathe chuck maintenance",
+    "Body": "Clean and lubricate the chuck jaws and check for runout.",
+    "Category": "Mechanical"
+  },
+  {
+    "Code": "p30",
+    "Title": "Grinding wheel ring test",
+    "Body": "Tap a new abrasive wheel and listen for a clear ring before mounting it.",
+    "Category": "Mechanical"
+  },
+  {
+    "Code": "p31",
+    "Title": "Compressed air leak survey",
+    "Body": "Walk the air lines with an ultrasonic detector during quiet hours and tag every leak.",
+    "Category": "Hydraulics & Pneumatics"
+  },
+  {
+    "Code": "p32",
+    "Title": "Pipe insulation repair",
+    "Body": "Replace damaged lagging on hot pipes to prevent heat loss and burns.",
+    "Category": "Steam & Boilers"
+  },
+  {
+    "Code": "p33",
+    "Title": "Roof drain clearing",
+    "Body": "Remove leaves and debris from the roof outlets before the wet season.",
+    "Category": "Building"
+  },
+  {
+    "Code": "p34",
+    "Title": "Door closer adjustment",
+    "Body": "Adjust the closing and latching speed valves so the door closes fully without slamming.",
+    "Category": "Building"
+  },
+  {
+    "Code": "p35",
+    "Title": "Elevator pit inspection",
+    "Body": "Check the lift pit for water, debris and the condition of the buffers.",
+    "Category": "Building"
+  },
+  {
+    "Code": "p36",
+    "Title": "Light fitting relamping",
+    "Body": "Replace failed lamps and dispose of the old tubes as hazardous waste.",
+    "Category": "Electrical"
+  },
+  {
+    "Code": "p37",
+    "Title": "Emergency lighting test",
+    "Body": "Simulate a mains failure and confirm the exit signs stay lit for ninety minutes.",
+    "Category": "Electrical"
+  },
+  {
+    "Code": "p38",
+    "Title": "Water heater anode check",
+    "Body": "Remove the sacrificial anode rod and replace it if heavily corroded.",
+    "Category": "Plumbing & Water"
+  },
+  {
+    "Code": "p39",
+    "Title": "Backflow preventer test",
+    "Body": "Test the testable backflow device every year with a differential pressure gauge.",
+    "Category": "Plumbing & Water"
+  },
+  {
+    "Code": "p40",
+    "Title": "Sump pump float test",
+    "Body": "Pour water into the pit and confirm the float switch starts the pump.",
+    "Category": "Plumbing & Water"
+  },
+  {
+    "Code": "p41",
+    "Title": "Diesel fuel polishing",
+    "Body": "Filter the stored diesel to remove water and microbial growth.",
+    "Category": "Plumbing & Water"
+  },
+  {
+    "Code": "p42",
+    "Title": "Fan vibration analysis",
+    "Body": "Measure vibration on the fan bearings; high readings indicate imbalance or misalignment.",
+    "Category": "Mechanical"
+  },
+  {
+    "Code": "p43",
+    "Title": "Shaft alignment",
+    "Body": "Use a laser alignment tool to line up the motor and pump shafts.",
+    "Category": "Mechanical"
+  },
+  {
+    "Code": "p44",
+    "Title": "Roller chain lubrication",
+    "Body": "Apply chain oil to the drive chains and check them for elongation.",
+    "Category": "Mechanical"
+  },
+  {
+    "Code": "p45",
+    "Title": "Vehicle tyre pressure check",
+    "Body": "Check and inflate the vehicle tyres to the placard pressure while they are cold.",
+    "Category": "Vehicles"
+  },
+  {
+    "Code": "p46",
+    "Title": "Ladder inspection",
+    "Body": "Inspect rungs, rails and feet before use and tag out any damaged ladder.",
+    "Category": "Safety"
+  },
+  {
+    "Code": "p47",
+    "Title": "Spill kit restock",
+    "Body": "Check the spill kit contents and replace used absorbent pads.",
+    "Category": "Safety"
+  },
+  {
+    "Code": "p48",
+    "Title": "Scaffold tag check",
+    "Body": "Confirm the scaffold has a current green tag before climbing.",
+    "Category": "Safety"
+  },
+  {
+    "Code": "p49",
+    "Title": "Solar panel cleaning",
+    "Body": "Rinse dust from the photovoltaic panels in the early morning.",
+    "Category": "Electrical"
+  },
+  {
+    "Code": "p50",
+    "Title": "UPS battery replacement",
+    "Body": "Swap the end-of-life batteries in the uninterruptible power supply.",
+    "Category": "Electrical"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "buildConfigurations": {
+    "capacitor": {
+      "source": {
+        "npm": "git+https://github.com/michaeldeguzman/capacitor-offline-bm25-forge.git#v0.1.0-beta.2"
+      }
+    }
+  }
+}

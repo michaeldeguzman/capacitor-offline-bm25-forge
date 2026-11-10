@@ -1,0 +1,6 @@
+{
+  "appId": "com.michaeldeguzman.offlinebm25.example",
+  "appName": "example",
+  "webDir": "www",
+  "loggingBehavior": "production"
+}

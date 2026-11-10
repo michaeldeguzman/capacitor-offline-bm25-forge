@@ -1,0 +1,4 @@
+node_modules
+www/js/plugin.js
+www/js/capacitor.js
+www/js/scores.json
