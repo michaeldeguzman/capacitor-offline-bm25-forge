@@ -2,7 +2,7 @@
 
 On-device BM25 keyword search for Capacitor apps. Text is tokenized, indexed and scored on the phone, with no network, no API key, and no data leaving the device. It gives the same tokens and scores as BM25Engine, my C# component for server-side keyword search in OutSystems, so a query behaves the same on the server and on the device.
 
-Index short texts (FAQ entries, procedure steps, chunks of a document), then search them by words: "pump seal" finds "Pump seal replacement". It matches words, not meaning. For meaning, use [capacitor-semantic-search](https://github.com/michaeldeguzman/capacitor-semantic-search-forge) and keep the two apart. It handles English only, and it does no phrase, boolean or fuzzy queries.
+Index short texts (FAQ entries, procedure steps, chunks of a document), then search them by words: "pump seal" finds "Pump seal replacement". It matches words, not meaning. For meaning, use [capacitor-semantic-search](https://github.com/michaeldeguzman/capacitor-semantic-search-forge). Their scores are not comparable, so do not blend or rank them together. It handles English only, and it does no phrase, boolean or fuzzy queries.
 
 ## Status
 
@@ -11,7 +11,8 @@ This is a beta release, `0.1.0-beta.2`. It is not on npm or the Forge. Install i
 | Platform | What I validated | What I did not |
 |---|---|---|
 | iOS | Unit tests on the Simulator. The validation steps in [docs/validation.md](docs/validation.md) on the Simulator and on a physical iPhone (iPhone 17 Pro Max, iOS 27.2) in Airplane Mode. | iOS 14 to 26. The plugin declares iOS 14.0, but Xcode 27.2 builds no lower than 15.0, so every build I ran used `IPHONEOS_DEPLOYMENT_TARGET=15.0`. |
-| Android | JVM unit tests, instrumented tests and the example app on an API 32 (Android 12) emulator, in Airplane Mode. | A physical Android device. |
+| Android, tests | JVM unit tests and instrumented tests on an API 32 (Android 12) emulator. | A physical Android device. |
+| Android, example app | The validation steps in [docs/validation.md](docs/validation.md) on that emulator, in Airplane Mode. | A physical Android device. |
 | MABS | Nothing yet. | An ODC build of the library and the demo. The Android module applies the Kotlin Gradle plugin 1.8.22, and I have not checked that MABS builds it unchanged. |
 | Web | Every method rejects with "OfflineBM25 is not available on web". | |
 
@@ -19,7 +20,7 @@ The Android module uses minSdk 22 and compileSdk 33, with Gradle 8.0.2 and AGP 8
 
 ## Install
 
-Requires Capacitor 5.
+Built against Capacitor 5. The semantic plugin, built the same way, ran in a MABS 12.1 build. This plugin has not been through MABS yet.
 
 ```bash
 npm install "git+https://github.com/michaeldeguzman/capacitor-offline-bm25-forge.git#v0.1.0-beta.2"
