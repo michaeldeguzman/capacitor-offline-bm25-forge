@@ -18,6 +18,8 @@ The scoring follows Okapi BM25 (Robertson, Walker and others, 1994) with the alw
 
 `tests/fixtures/scores.json`, `docs/odc/seed/` and the example apps use 50 short maintenance procedures with generic equipment and no client data. They were written for this project.
 
+The identifiers in `docs/odc/seed/seed-procedures-v2.json` are invented, and Australian Standards are cited by number only.
+
 ## Capacitor
 
 The plugin runs on [Capacitor](https://capacitorjs.com/) 5, which is MIT licensed. The example apps depend on it.

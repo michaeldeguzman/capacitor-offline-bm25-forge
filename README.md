@@ -6,28 +6,33 @@ Index short texts (FAQ entries, procedure steps, chunks of a document), then sea
 
 ## Status
 
-This is a beta release, `0.1.0-beta.2`. It is not on npm or the Forge. Install it from this repo at a tag.
+This is an early release, `0.1.0`. Install it from npm. It is not on the Forge.
 
 | Platform | What I validated | What I did not |
 |---|---|---|
 | iOS | Unit tests on the Simulator. The validation steps in [docs/validation.md](docs/validation.md) on the Simulator and on a physical iPhone (iPhone 17 Pro Max, iOS 27.2) in Airplane Mode. | iOS 14 to 26. The plugin declares iOS 14.0, but Xcode 27.2 builds no lower than 15.0, so every build I ran used `IPHONEOS_DEPLOYMENT_TARGET=15.0`. |
 | Android, tests | JVM unit tests and instrumented tests on an API 32 (Android 12) emulator. | A physical Android device. |
 | Android, example app | The validation steps in [docs/validation.md](docs/validation.md) on that emulator, in Airplane Mode. | A physical Android device. |
-| MABS | Nothing yet. | An ODC build of the library and the demo. The Android module applies the Kotlin Gradle plugin 1.8.22, and I have not checked that MABS builds it unchanged. |
+| MABS, iOS | An ODC library and demo built through MABS, and the demo validated on a physical iPhone (iPhone 17 Pro Max, iOS 27.2). | The demo on iOS versions other than 27.2. |
+| MABS, Android | MABS built the APK and it launched on the API 32 (Android 12) emulator. The module applies the Kotlin Gradle plugin 1.8.22, and MABS built the APK with it. | The full demo on Android, on the emulator or a physical device. |
 | Web | Every method rejects with "OfflineBM25 is not available on web". | |
 
 The Android module uses minSdk 22 and compileSdk 33, with Gradle 8.0.2 and AGP 8.0.0, the same setup as capacitor-semantic-search.
 
 ## Install
 
-Built against Capacitor 5. The semantic plugin, built the same way, ran in a MABS 12.1 build. This plugin has not been through MABS yet.
+Built against Capacitor 5. The semantic plugin, built the same way, ran in a MABS 12.1 build. This plugin has been through MABS too: see Status.
 
 ```bash
-npm install "git+https://github.com/michaeldeguzman/capacitor-offline-bm25-forge.git#v0.1.0-beta.2"
+npm install capacitor-offline-bm25@0.1.0
 npx cap sync
 ```
 
-The repo holds the built `dist` folder, so a git install has the `main`, `module` and `types` files.
+To install from this repo instead, use the tag. The repo holds the built `dist` folder, so a git install has the `main`, `module` and `types` files.
+
+```bash
+npm install "git+https://github.com/michaeldeguzman/capacitor-offline-bm25-forge.git#v0.1.0"
+```
 
 For an ODC Mobile Library, put this in the library's Extensibility Configuration (also in [docs/odc/extensibility.json](docs/odc/extensibility.json)):
 
@@ -36,7 +41,21 @@ For an ODC Mobile Library, put this in the library's Extensibility Configuration
   "buildConfigurations": {
     "capacitor": {
       "source": {
-        "npm": "git+https://github.com/michaeldeguzman/capacitor-offline-bm25-forge.git#v0.1.0-beta.2"
+        "npm": "capacitor-offline-bm25@0.1.0"
+      }
+    }
+  }
+}
+```
+
+The git URL at the tag also works as the source:
+
+```json
+{
+  "buildConfigurations": {
+    "capacitor": {
+      "source": {
+        "npm": "git+https://github.com/michaeldeguzman/capacitor-offline-bm25-forge.git#v0.1.0"
       }
     }
   }
@@ -215,6 +234,15 @@ File sizes: 12,985 bytes for 50 items, 474,285 bytes for 2,000 items, and 623,15
 - **No web implementation.** Every method rejects on web.
 - **Short texts.** I tested 2,000 items of about 15 tokens. I did not test long documents.
 
+### Limits for identifiers
+
+Fault codes, part numbers and standards references are tokenized like any other text, so matching is per token and not an exact match on the whole code. The examples come from `docs/odc/seed/seed-procedures-v2.json`, and `docs/odc/seed/identifier-tokens.md` lists the tokens for every identifier in it.
+
+- **A single letter or digit is the distinctive part.** `V-7` reduces to the token `v`, because the tokenizer drops the single digit `7`. `V-7` and `V-3` become the same token, so the code cannot be found on its own.
+- **`AS` is a stop word and trailing single digits are dropped.** `AS 1674.1` and `AS 1674.2` both become the token `1674`, so they index the same. A query for `AS 1674.2` finds the procedure that cites `AS 1674.1`.
+- **Shared numbers match each other.** `UP-3000` loses `up` as a stop word and `AS/NZS 3000` loses `as`, so both hold the token `3000`. A query for `3000` returns both.
+- **A partial code matches every identifier that shares the remaining tokens.** `MS-4471` returns the procedures with `MS-4471-B` and `MS-4471-C`, tied, and a procedure with only the token `ms` after them.
+
 ## ODC library
 
 [docs/odc](docs/odc) has everything for an ODC Mobile Library that wraps the plugin: the seven JavaScript nodes, the structures, the seed data and a short guide. The JavaScript nodes are checked against a mock plugin with `node tools/odc/check-js.js`.
@@ -229,4 +257,4 @@ The Porter stemming algorithm is by M. F. Porter. BM25Engine is the reference im
 
 ## Next
 
-I plan to build the ODC library and demo in Studio and run them through MABS on an iPhone. After that I want to check Android on a physical device and the iOS 14 target on an older Xcode.
+I want to run the full ODC demo on Android through MABS, check Android on a physical device, and check the iOS 14 target on an older Xcode.

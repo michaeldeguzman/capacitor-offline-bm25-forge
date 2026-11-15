@@ -38,7 +38,7 @@ async function check(label, fn) { await fn(); passed++; console.log("PASS " + la
 
 (async () => {
   const missing = [undefined, null]; // no CapacitorPlugins at all, and CapacitorPlugins without OfflineBM25
-  const files = { IsAvailable: {}, UpsertMany: { Collection: "c", ItemsJson: "[]" }, Search: { Collection: "c", Query: "q" },
+  const files = { IsPluginAvailable: {}, UpsertMany: { Collection: "c", ItemsJson: "[]" }, Search: { Collection: "c", Query: "q" },
     Remove: { Collection: "c", IdsJson: "[]" }, Clear: { Collection: "c" }, GetCollectionInfo: { Collection: "c" }, Tokenize: { Text: "t" } };
 
   for (const [file, input] of Object.entries(files)) {
@@ -51,10 +51,10 @@ async function check(label, fn) { await fn(); passed++; console.log("PASS " + la
     }
   }
 
-  await check("IsAvailable: success and rejection", async () => {
-    let r = await run("IsAvailable", {}, { isAvailable: () => ok({ available: true, tokenizerVersion: 2 }) });
+  await check("IsPluginAvailable: success and rejection", async () => {
+    let r = await run("IsPluginAvailable", {}, { isAvailable: () => ok({ available: true, tokenizerVersion: 2 }) });
     assert.deepStrictEqual([r.out.Available, r.out.TokenizerVersion, r.out.Success, r.out.ErrorMessage], [true, 2, true, ""]);
-    r = await run("IsAvailable", {}, { isAvailable: () => reject(new Error("boom")) });
+    r = await run("IsPluginAvailable", {}, { isAvailable: () => reject(new Error("boom")) });
     assert.deepStrictEqual([r.out.Available, r.out.Success, r.out.ErrorMessage], [false, false, "boom"]);
   });
 

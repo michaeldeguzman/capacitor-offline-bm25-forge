@@ -1,6 +1,6 @@
 {
   "name": "capacitor-offline-bm25",
-  "version": "0.1.0-beta.2",
+  "version": "0.1.0",
   "description": "On-device BM25 keyword search for Capacitor, with a native inverted index (iOS and Android)",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

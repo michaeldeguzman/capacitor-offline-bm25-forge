@@ -77,4 +77,4 @@ Every iOS launch logs `JS Eval error A JavaScript exception occurred` once. It c
 
 - A physical Android device.
 - iOS 14 to 26, and any Release build.
-- An ODC library and demo built with MABS.
+- The ODC demo built with MABS on Android. The iPhone run is in the README status.

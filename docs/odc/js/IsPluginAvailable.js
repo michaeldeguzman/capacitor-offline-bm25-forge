@@ -1,4 +1,4 @@
-// JS node of the client action IsAvailable.
+// JS node of the client action IsPluginAvailable.
 // Inputs: none.
 // Outputs: Available (Boolean), TokenizerVersion (Integer), Success (Boolean), ErrorMessage (Text).
 const P = window.CapacitorPlugins ? window.CapacitorPlugins.OfflineBM25 : null;

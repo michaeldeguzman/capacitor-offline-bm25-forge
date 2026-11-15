@@ -1,0 +1,575 @@
+{
+  "source": "BM25Engine BM25Scorer.Score over seed-procedures-v2.json indexed as Title \u002B \u0022. \u0022 \u002B Body",
+  "k1": 1.2,
+  "b": 0.75,
+  "tieOrder": "score descending, then id ascending (ordinal)",
+  "totalDocuments": 50,
+  "uniqueTerms": 572,
+  "avgLength": 22.3,
+  "queryCount": 20,
+  "queries": [
+    {
+      "kind": "identifier",
+      "query": "E-217",
+      "target": "p14",
+      "targetFirst": true,
+      "queryTerms": [
+        "e",
+        "217"
+      ],
+      "hasTies": true,
+      "resultCount": 6,
+      "results": [
+        {
+          "id": "p14",
+          "score": 5.142953613817456
+        },
+        {
+          "id": "p18",
+          "score": 2.1103518634926575
+        },
+        {
+          "id": "p49",
+          "score": 2.0339052272622937
+        },
+        {
+          "id": "p23",
+          "score": 1.9977218964748638
+        },
+        {
+          "id": "p50",
+          "score": 1.9977218964748638
+        },
+        {
+          "id": "p15",
+          "score": 1.8050500221943804
+        }
+      ]
+    },
+    {
+      "kind": "identifier",
+      "query": "E-271",
+      "target": "p15",
+      "targetFirst": true,
+      "queryTerms": [
+        "e",
+        "271"
+      ],
+      "hasTies": true,
+      "resultCount": 6,
+      "results": [
+        {
+          "id": "p15",
+          "score": 4.894945491700879
+        },
+        {
+          "id": "p18",
+          "score": 2.1103518634926575
+        },
+        {
+          "id": "p49",
+          "score": 2.0339052272622937
+        },
+        {
+          "id": "p23",
+          "score": 1.9977218964748638
+        },
+        {
+          "id": "p50",
+          "score": 1.9977218964748638
+        },
+        {
+          "id": "p14",
+          "score": 1.8965049867266535
+        }
+      ]
+    },
+    {
+      "kind": "identifier",
+      "query": "MS-4471-B",
+      "target": "p14",
+      "targetFirst": true,
+      "queryTerms": [
+        "ms",
+        "4471",
+        "b"
+      ],
+      "hasTies": false,
+      "resultCount": 3,
+      "results": [
+        {
+          "id": "p14",
+          "score": 8.48902615651062
+        },
+        {
+          "id": "p40",
+          "score": 5.242577529419817
+        },
+        {
+          "id": "p25",
+          "score": 2.851699160491922
+        }
+      ]
+    },
+    {
+      "kind": "identifier",
+      "query": "MS-4471-C",
+      "target": "p40",
+      "targetFirst": true,
+      "queryTerms": [
+        "ms",
+        "4471",
+        "c"
+      ],
+      "hasTies": false,
+      "resultCount": 4,
+      "results": [
+        {
+          "id": "p40",
+          "score": 8.018748335118998
+        },
+        {
+          "id": "p14",
+          "score": 5.242577529419817
+        },
+        {
+          "id": "p13",
+          "score": 2.8732208629968805
+        },
+        {
+          "id": "p25",
+          "score": 2.851699160491922
+        }
+      ]
+    },
+    {
+      "kind": "identifier",
+      "query": "BT-3382",
+      "target": "p02",
+      "targetFirst": true,
+      "queryTerms": [
+        "bt",
+        "3382"
+      ],
+      "hasTies": false,
+      "resultCount": 2,
+      "results": [
+        {
+          "id": "p02",
+          "score": 6.344048024775217
+        },
+        {
+          "id": "p09",
+          "score": 3.0892073968617537
+        }
+      ]
+    },
+    {
+      "kind": "identifier",
+      "query": "BT-3328",
+      "target": "p09",
+      "targetFirst": true,
+      "queryTerms": [
+        "bt",
+        "3328"
+      ],
+      "hasTies": false,
+      "resultCount": 2,
+      "results": [
+        {
+          "id": "p09",
+          "score": 6.7017203920104045
+        },
+        {
+          "id": "p02",
+          "score": 2.924335683647151
+        }
+      ]
+    },
+    {
+      "kind": "identifier",
+      "query": "VX-1150",
+      "target": "p04",
+      "targetFirst": true,
+      "queryTerms": [
+        "vx",
+        "1150"
+      ],
+      "hasTies": false,
+      "resultCount": 2,
+      "results": [
+        {
+          "id": "p04",
+          "score": 6.233159634363533
+        },
+        {
+          "id": "p31",
+          "score": 2.8732208629968805
+        }
+      ]
+    },
+    {
+      "kind": "identifier",
+      "query": "VX-1510",
+      "target": "p31",
+      "targetFirst": true,
+      "queryTerms": [
+        "vx",
+        "1510"
+      ],
+      "hasTies": false,
+      "resultCount": 2,
+      "results": [
+        {
+          "id": "p31",
+          "score": 6.233159634363533
+        },
+        {
+          "id": "p04",
+          "score": 2.8732208629968805
+        }
+      ]
+    },
+    {
+      "kind": "identifier",
+      "query": "E-217 seal",
+      "target": "p14",
+      "targetFirst": true,
+      "queryTerms": [
+        "e",
+        "217",
+        "seal"
+      ],
+      "hasTies": true,
+      "resultCount": 8,
+      "results": [
+        {
+          "id": "p14",
+          "score": 9.517188219261259
+        },
+        {
+          "id": "p11",
+          "score": 2.55262797255919
+        },
+        {
+          "id": "p40",
+          "score": 2.4664067237206355
+        },
+        {
+          "id": "p18",
+          "score": 2.1103518634926575
+        },
+        {
+          "id": "p49",
+          "score": 2.0339052272622937
+        },
+        {
+          "id": "p23",
+          "score": 1.9977218964748638
+        },
+        {
+          "id": "p50",
+          "score": 1.9977218964748638
+        },
+        {
+          "id": "p15",
+          "score": 1.8050500221943804
+        }
+      ]
+    },
+    {
+      "kind": "identifier",
+      "query": "belt BT-3328",
+      "target": "p09",
+      "targetFirst": true,
+      "queryTerms": [
+        "belt",
+        "bt",
+        "3328"
+      ],
+      "hasTies": false,
+      "resultCount": 2,
+      "results": [
+        {
+          "id": "p09",
+          "score": 11.500362696120341
+        },
+        {
+          "id": "p02",
+          "score": 7.586867742761848
+        }
+      ]
+    },
+    {
+      "kind": "identifier",
+      "query": "AS 1851",
+      "target": "p11",
+      "targetFirst": true,
+      "queryTerms": [
+        "1851"
+      ],
+      "hasTies": false,
+      "resultCount": 1,
+      "results": [
+        {
+          "id": "p11",
+          "score": 3.359938771366652
+        }
+      ]
+    },
+    {
+      "kind": "identifier",
+      "query": "compressor VX-1510",
+      "target": "p31",
+      "targetFirst": true,
+      "queryTerms": [
+        "compressor",
+        "vx",
+        "1510"
+      ],
+      "hasTies": false,
+      "resultCount": 3,
+      "results": [
+        {
+          "id": "p31",
+          "score": 8.785787606922723
+        },
+        {
+          "id": "p04",
+          "score": 6.435622660180041
+        },
+        {
+          "id": "p23",
+          "score": 2.598039420973961
+        }
+      ]
+    },
+    {
+      "kind": "behaviour",
+      "query": "MS-4471",
+      "target": null,
+      "targetFirst": null,
+      "queryTerms": [
+        "ms",
+        "4471"
+      ],
+      "hasTies": true,
+      "resultCount": 3,
+      "results": [
+        {
+          "id": "p14",
+          "score": 5.242577529419817
+        },
+        {
+          "id": "p40",
+          "score": 5.242577529419817
+        },
+        {
+          "id": "p25",
+          "score": 2.851699160491922
+        }
+      ]
+    },
+    {
+      "kind": "behaviour",
+      "query": "3000",
+      "target": null,
+      "targetFirst": null,
+      "queryTerms": [
+        "3000"
+      ],
+      "hasTies": false,
+      "resultCount": 2,
+      "results": [
+        {
+          "id": "p16",
+          "score": 2.977302117844826
+        },
+        {
+          "id": "p50",
+          "score": 2.924335683647151
+        }
+      ]
+    },
+    {
+      "kind": "behaviour",
+      "query": "AS 1674.2",
+      "target": null,
+      "targetFirst": null,
+      "queryTerms": [
+        "1674"
+      ],
+      "hasTies": false,
+      "resultCount": 1,
+      "results": [
+        {
+          "id": "p28",
+          "score": 3.359938771366652
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "query": "pump seal",
+      "target": null,
+      "targetFirst": null,
+      "queryTerms": [
+        "pump",
+        "seal"
+      ],
+      "hasTies": false,
+      "resultCount": 7,
+      "results": [
+        {
+          "id": "p14",
+          "score": 7.04825896693774
+        },
+        {
+          "id": "p40",
+          "score": 5.56370218013079
+        },
+        {
+          "id": "p43",
+          "score": 2.8432902164204066
+        },
+        {
+          "id": "p15",
+          "score": 2.5818048471749484
+        },
+        {
+          "id": "p11",
+          "score": 2.55262797255919
+        },
+        {
+          "id": "p23",
+          "score": 1.9977218964748638
+        },
+        {
+          "id": "p01",
+          "score": 1.834538949766988
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "query": "generator",
+      "target": null,
+      "targetFirst": null,
+      "queryTerms": [
+        "gener"
+      ],
+      "hasTies": false,
+      "resultCount": 1,
+      "results": [
+        {
+          "id": "p18",
+          "score": 5.6115227809818
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "query": "hydraulic hose leak",
+      "target": null,
+      "targetFirst": null,
+      "queryTerms": [
+        "hydraul",
+        "hose",
+        "leak"
+      ],
+      "hasTies": true,
+      "resultCount": 6,
+      "results": [
+        {
+          "id": "p03",
+          "score": 11.247135510155724
+        },
+        {
+          "id": "p21",
+          "score": 3.228224107754748
+        },
+        {
+          "id": "p31",
+          "score": 3.228224107754748
+        },
+        {
+          "id": "p11",
+          "score": 2.8732208629968805
+        },
+        {
+          "id": "p13",
+          "score": 2.8732208629968805
+        },
+        {
+          "id": "p14",
+          "score": 2.2350408792571104
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "query": "water level",
+      "target": null,
+      "targetFirst": null,
+      "queryTerms": [
+        "water",
+        "level"
+      ],
+      "hasTies": true,
+      "resultCount": 9,
+      "results": [
+        {
+          "id": "p10",
+          "score": 7.263125520201905
+        },
+        {
+          "id": "p23",
+          "score": 2.5983923700542317
+        },
+        {
+          "id": "p24",
+          "score": 2.411083196426986
+        },
+        {
+          "id": "p35",
+          "score": 1.8615260759047367
+        },
+        {
+          "id": "p41",
+          "score": 1.8615260759047367
+        },
+        {
+          "id": "p12",
+          "score": 1.7888259904929655
+        },
+        {
+          "id": "p38",
+          "score": 1.7545645861208934
+        },
+        {
+          "id": "p04",
+          "score": 1.6012233424319438
+        },
+        {
+          "id": "p40",
+          "score": 1.5471381103738182
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "query": "red cylinder for putting out flames",
+      "target": null,
+      "targetFirst": null,
+      "queryTerms": [
+        "red",
+        "cylind",
+        "put",
+        "flame"
+      ],
+      "hasTies": false,
+      "resultCount": 0,
+      "results": []
+    }
+  ]
+}
