@@ -1,6 +1,6 @@
 # ODC library: OfflineKeywordSearch
 
-How to wrap the plugin in an ODC Mobile Library. The JavaScript nodes are in `js/`, the structures in `structures.json` and the sample data in `seed/` as JSON and as ready-to-paste text literals. I built this shape for my own libraries, and the same JavaScript is checked against a mock plugin with `node tools/odc/check-js.js`. MABS built and launched the Android APK on an API 32 emulator and the iOS Simulator build. I validated the demo through MABS on an iPhone 17 Pro Max (iOS 27.2). I have not run the full demo on Android, and it is not planned for now.
+How to wrap the plugin in an ODC Mobile Library. The JavaScript nodes are in `js/`, the structures in `structures.json` and the sample data in `seed/` as JSON. I built this shape for my own libraries, and the same JavaScript is checked against a mock plugin with `node tools/odc/check-js.js`. MABS built and launched the Android APK on an API 32 emulator and the iOS Simulator build. I validated the demo through MABS on an iPhone 17 Pro Max (iOS 27.2). I have not run the full demo on Android, and it is not planned for now.
 
 ## 1. Library and extensibility
 
@@ -81,10 +81,10 @@ Every action has one JavaScript node. Paste the file with the action's name from
 
 ### Demo data from a server action
 
-A demo app can carry its documents inside a server action, copy them once into a local entity, and search that copy offline. The sample set is `seed/seed-procedures-v2.json`, 50 procedures. Each `Body` in it ends with a sentence of identifiers. `seed/seed-procedures.json` is the original set without identifiers, which `tests/fixtures/scores.json` was generated from. `seed/demo-expected.json` holds the ranked results for 20 demo queries over the v2 set.
+A demo app can carry its documents as a resource, read them in a server action, copy them once into a local entity, and search that copy offline. The sample set is `seed/seed-procedures-v2.json`, 50 procedures. Each `Body` in it ends with a sentence of identifiers. `seed/seed-procedures.json` is the original set without identifiers, which `tests/fixtures/scores.json` was generated from. `seed/demo-expected.json` holds the ranked results for 20 demo queries over the v2 set.
 
 1. Create a structure `SeedProcedure` with `Code`, `Title`, `Body` and `Category`, all Text. Use **Add Structure from JSON** with the first record of `seed/seed-procedures-v2.json`.
-2. Create a server action `GetSeedProcedures` with a local Text variable `SeedJson`. Assign it the literal in `seed/seed-procedures-v2.literal.txt`: the v2 JSON on one line, 12,608 characters, with every double quote doubled as OutSystems text literals require. JSON Deserialize it into a `List of SeedProcedure` and return the list. If Studio rejects the long literal, `seed/seed-procedures-v2.literal-parts.txt` holds the same literal as 4 quoted lines, cut between records. Join them with `+` in file order. I have not verified how long a text literal Studio accepts.
+2. Add `seed/seed-procedures-v2.json` to the app as a resource. Create a server action `GetSeedProcedures` that reads the resource, JSON Deserializes it into a `List of SeedProcedure` and returns the list.
 3. Create a local entity `LocalProcedure` with `Code` (Text 20), `Title` (Text 200), `Body` (Text 2000) and `Category` (Text 200). Set the lengths before the first publish. A client action calls `GetSeedProcedures`, creates or updates local rows by `Code`, and deletes local rows whose `Code` is no longer in the list. It stops without changes if the list is empty.
 4. Load nothing automatically. Leave On Initialize empty. Add a **Load from server** button that runs the sync and shows `<n> procedures stored`, or `Could not load procedures: ` plus the error message on failure. Add a **Build index** button that clears an existing collection and indexes from `LocalProcedure`, or shows `Load from server first` when `LocalProcedure` is empty. Add a **Refresh status** button that shows `IsPluginAvailable`, the `LocalProcedure` count and `GetCollectionInfo`. Tap Load while online, then Build. Every search after that works offline, and a relaunch keeps the index because nothing rebuilds it on start.
 
@@ -98,7 +98,7 @@ The v2 data has fault codes (`E-217`), part numbers (`MS-4471-B`), model numbers
 
 Matching is per token, and each token is weighted by how rare it is in the collection. In the sample data the token `217` is in one procedure and `e` is in six. A query for `E-217` ranks the procedure with `217` first, at 5.14, and the procedures with only `e` trail at 2.11 and below. `E-271` differs from `E-217` in the rare token, so it ranks a different procedure first. The pairs `MS-4471-B` and `MS-4471-C`, `BT-3382` and `BT-3328`, and `VX-1150` and `VX-1510` behave the same way.
 
-This is not an exact match on the whole code. A code that shares tokens with another code scores on the shared tokens as well. Stop words and stemming change some codes: `AS 1851` becomes the token `1851`, `V-7` becomes the single letter `v`, and `2RS` is stemmed to `2r`. `seed/identifier-tokens.md` lists the tokens for every identifier in the sample data and flags the weak ones. I did not test the plugin against v2 data on a device. The expected results come from the C# BM25Engine.
+This is not an exact match on the whole code. A code that shares tokens with another code scores on the shared tokens as well. Stop words and stemming change some codes: `AS 1851` becomes the token `1851`, `V-7` becomes the single letter `v`, and `2RS` is stemmed to `2r`. `seed/identifier-tokens.md` lists the tokens for every identifier in the sample data and flags the weak ones. The expected results come from the C# BM25Engine. On the iPhone, the demo index matched it: `Count 50`, `UniqueTerms 572`, `AvgLength 22.3`.
 
 #### Limits for identifiers
 
