@@ -14,7 +14,7 @@ This is an early release, `0.1.0`. Install it from npm. It is not on the Forge.
 | Android, tests | JVM unit tests and instrumented tests on an API 32 (Android 12) emulator. | A physical Android device. |
 | Android, example app | The validation steps in [docs/validation.md](docs/validation.md) on that emulator, in Airplane Mode. | A physical Android device. |
 | MABS, iOS | An ODC library and demo built through MABS, and the demo validated on a physical iPhone (iPhone 17 Pro Max, iOS 27.2). | The demo on iOS versions other than 27.2. |
-| MABS, Android | MABS built the APK and it launched on the API 32 (Android 12) emulator. The module applies the Kotlin Gradle plugin 1.8.22, and MABS built the APK with it. | The full demo on Android, on the emulator or a physical device. |
+| MABS, Android | MABS built the APK and it launched on the API 32 (Android 12) emulator. The module applies the Kotlin Gradle plugin 1.8.22, and MABS built the APK with it. | The full ODC demo on Android. I have not run it, and it is not planned for now. |
 | Web | Every method rejects with "OfflineBM25 is not available on web". | |
 
 The Android module uses minSdk 22 and compileSdk 33, with Gradle 8.0.2 and AGP 8.0.0, the same setup as capacitor-semantic-search.
@@ -257,4 +257,4 @@ The Porter stemming algorithm is by M. F. Porter. BM25Engine is the reference im
 
 ## Next
 
-I want to run the full ODC demo on Android through MABS, check Android on a physical device, and check the iOS 14 target on an older Xcode.
+Next I want to check Android on a physical device and the iOS 14 target on an older Xcode. The full ODC demo on Android is not planned for now.

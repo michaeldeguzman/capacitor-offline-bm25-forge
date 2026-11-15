@@ -1,6 +1,6 @@
 # ODC library: OfflineKeywordSearch
 
-How to wrap the plugin in an ODC Mobile Library. The JavaScript nodes are in `js/`, the structures in `structures.json` and the sample data in `seed/` as JSON and as ready-to-paste text literals. I built this shape for my own libraries, and the same JavaScript is checked against a mock plugin with `node tools/odc/check-js.js`. MABS built and launched the Android APK on an API 32 emulator and the iOS Simulator build. I validated the demo through MABS on an iPhone 17 Pro Max (iOS 27.2). I have no Android result for the full demo yet.
+How to wrap the plugin in an ODC Mobile Library. The JavaScript nodes are in `js/`, the structures in `structures.json` and the sample data in `seed/` as JSON and as ready-to-paste text literals. I built this shape for my own libraries, and the same JavaScript is checked against a mock plugin with `node tools/odc/check-js.js`. MABS built and launched the Android APK on an API 32 emulator and the iOS Simulator build. I validated the demo through MABS on an iPhone 17 Pro Max (iOS 27.2). I have not run the full demo on Android, and it is not planned for now.
 
 ## 1. Library and extensibility
 
@@ -109,7 +109,7 @@ This is not an exact match on the whole code. A code that shares tokens with ano
 
 `GetSeedProcedures` is callable without sign-in if the screen has no role. That suits demo data. Real documents need a role check.
 
-This guide gives the steps. I validated a demo built from them through MABS on an iPhone 17 Pro Max (iOS 27.2). I have not run it on Android through MABS beyond a build and a launch.
+This guide gives the steps. I validated a demo built from them through MABS on an iPhone 17 Pro Max (iOS 27.2). I have not run it on Android through MABS beyond a build and a launch, and that is not planned for now.
 
 The example apps in `example/` show the same calls without ODC.
 
@@ -142,4 +142,4 @@ Use the full path to `adb` if it is not on `PATH`. Airplane Mode may still be on
 
 **Test order.** Start with the Android emulator, which needs no signing. Then the iOS Simulator. Then the iPhone in Airplane Mode for the offline check.
 
-I will add the Android results here once the full demo has run on an Android device through MABS.
+The full demo has not run on Android through MABS, so this guide has no Android results.
