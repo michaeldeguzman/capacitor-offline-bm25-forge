@@ -189,7 +189,7 @@ Both ports copy the C# character rules on UTF-16 code units. The Swift port neve
 
 - `char.IsLetterOrDigit`: general category Lu, Ll, Lt, Lm, Lo or Nd.
 - `char.IsWhiteSpace`: category Zs, Zl or Zp, plus U+0009 to U+000D and U+0085. The Kotlin port does not call `Char.isWhitespace`, because Java treats U+001C to U+001F as whitespace and .NET does not.
-- `ToLowerInvariant`: the single-scalar lowercase mapping of each code unit. U+0130 stays unchanged, as in .NET. Java maps U+0130 to `i`, so the Kotlin port special-cases it. Neither port uses a string-level lowercase, because those apply the final-sigma rule and C# does not.
+- `ToLowerInvariant`: the single-scalar lowercase mapping of each code unit. U+0130 stays unchanged, as in .NET. Java maps U+0130 to `i`, so the Kotlin port special-cases it. Neither port lowercases whole strings. Kotlin's String.lowercase() applies context rules such as final sigma, and Swift's lowercased() can turn one code unit into several. Both ports lowercase one code unit at a time, as BM25Engine does.
 
 Characters outside the Basic Multilingual Plane, such as emoji and mathematical bold letters, are surrogate pairs in UTF-16. Each surrogate is neither a letter nor whitespace, so these characters are dropped, as in C#.
 

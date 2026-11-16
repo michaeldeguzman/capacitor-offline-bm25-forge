@@ -17,8 +17,8 @@ import Foundation
 /// - lowercase matches string.ToLowerInvariant for one code unit. I use the single scalar
 ///   lowercase mapping. If the Unicode full mapping has more than one scalar (only U+0130),
 ///   I keep the code unit unchanged, which is what .NET does under the invariant culture.
-///   I do not use String.lowercased(), because it applies the final sigma context rule and
-///   C# does not.
+///   I do not use String.lowercased(), because its full mappings can turn one code unit into
+///   several, and C# maps one code unit at a time.
 ///
 /// The general categories come from the Unicode tables in the Swift standard library. .NET
 /// ships its own table version. A character assigned in one version and not the other would
